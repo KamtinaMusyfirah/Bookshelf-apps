@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    
+}
+
+body{
+    background-color: aliceblue;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(81, 190, 190);
+    color: white;
+    font-size: 25px;
+}
+
+main {
+    max-width: 800px;
+    width: 45%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.quote{
+    color: rgb(81, 190, 190);
+    text-align: center;
+    font-size: 25px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid rgb(81, 190, 190);
+    border-radius: 15px;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(81, 190, 190);
+    letter-spacing: 2px;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > .input > input {
+    outline: none;
+    background: none;
+    height: 35px;
+}
+
+.input_section > form > button {
+    background-color: rgb(81, 190, 190);
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    display: block;
+    width: 45%;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 27%;
+    font-size: 18px;
+}
+.input_section > form > #bookEdit {
+    display: none;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    border-color: rgb(81, 190, 190);
+}
+
+
+
+.input_section > form > .input > label {
+    color: rgb(81, 190, 190);
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: rgb(81, 190, 190);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid rgb(81, 190, 190);
+    border-radius: 10px;
+}
+
+.search_section > h2 {
+    color: rgb(81, 190, 190);
+    letter-spacing: 2px;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+    color: rgb(81, 190, 190);
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 15px;
+    border-color: rgb(81, 190, 190);
+    background: none;
+}
+
+.search_section > form > button {
+    background-color: rgb(81, 190, 190);
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid rgb(81, 190, 190);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(81, 190, 190);
+    padding: 10px 10px;
+    margin: -5px -40px;
+    text-align:center;
+    letter-spacing: 2px;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid rgb(81, 190, 190);
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf>.listBuku>.book_item>.action {
+    display: flex;
+    align-items: center;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check {
+    background: url('assets/check-outline.png');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.check:hover {
+    background: url('assets/check-solid.png');
+    background-size: contain;
+}
+
+.trash{
+    background: url('assets/trash-outline.svg');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.trash:hover {
+    background: url('assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo{
+    background: url('assets/undo-fill.png');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo:hover {
+    background: url('assets/undo-outline.png');
+    background-size: contain;
+}
+
+.edit{
+    background: url('assets/edit-solid.png');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.edit:hover {
+    background: url('assets/edit-outline.png');
+    background-size: contain;
+}
+
+.check:focus, .trash {
+    outline: none;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*Modal */
+.modal-content {
+    border: 1px solid rgb(81, 190, 190);
+    border-radius: 5px;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 10px;
+    width: 25%;
+    background-color: aliceblue;
+}
+
